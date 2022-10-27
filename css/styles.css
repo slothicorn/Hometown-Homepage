@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.75px;
+    word-spacing: 0.25px;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #425931;
+    color: #E2DFD4;
+    text-shadow: 0 0 1px #000000;
+}
+
+header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    justify-content: space-between;
+}
+
+.Header-logo {
+    max-width: 150px;
+    max-height: 150px;
+    padding: 20px;
+}
+
+.Hmb {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hmb-line {
+    width: 50px;
+    height: 8px;
+    margin-bottom: 5px;
+    background-color: #214457;
+    border-radius: 5px;
+    transition: all 1s ease-out;
+}
+
+.Hmb:hover {
+    cursor: pointer;
+}
+
+.Hmb:hover .Hmb-line.Hmb-line:nth-child(1){
+    width: 50px;
+    height: 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #214457;
+    rotate: 225deg;
+    position: absolute;
+}
+
+.Hmb:hover .Hmb-line.Hmb-line:nth-child(2){
+    rotate: 720deg;
+    position: absolute;
+    opacity: 0;
+}
+
+.Hmb:hover .Hmb-line.Hmb-line:nth-child(3){
+    width: 50px;
+    height: 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #214457;
+    rotate: -225deg;
+    position: absolute;
+}
+
+section {
+    padding: 50px 30px;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #214457;
+    text-shadow: 0 0 2px #d1d7da;
+    transition: all 0.1s ease;
+}
+
+a:hover {
+    font-size: 103%;
+    text-decoration: underline;
+}
+
+#HomeHero{
+    color: #f1efe8;
+    text-shadow: 0 0 3px #000000;
+    background-image: url(../img/karvina.jpg);
+    min-height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomeHero-title {
+    margin-bottom: 20px;
+    padding: 5px 15px 0px 15px;
+    font-size: 50px;
+    background-color: #364e5c;
+    border-radius: 20px;
+}
+
+.HomeHero-subtitle {
+    padding: 5px 10px 2px;
+    font-size: 24px;
+    background-color: #6e8b9c;
+    border-radius: 10px;
+}
+
+.Background {
+    color: #172323;
+    text-shadow: 0 0 2px #ffffff;
+    background: linear-gradient(#E2DFD4 10%,#a2aca5 60%);
+}
+
+#Activities {
+    text-align: center;
+}
+
+.Activities-title {
+    margin-bottom: 50px;
+}
+
+.Activities-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.Activity {
+    flex: 1;
+}
+
+.Activity-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.Activity-title {
+    margin-bottom: 10px;
+}
+
+.Activity-text {
+    margin-bottom: 10px;
+}
+
+.Guide-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: auto;
+    max-width: 500px;
+    min-height: 300px;
+    padding: 10px 50px;
+    background-color: #E2DFD4;
+    border: 1px solid #7E8C83;
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+
+.Guide-card:hover {
+    box-shadow: 0px 6px 8px 6px #7E8C83;
+}
+
+.Guide-image {
+    width: 180px;
+    height: 180px;
+}
+
+.Guide-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.Guide-title {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.Guide-quote {
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.Guide-name {
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.Arrow-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto 90% 0;
+    width: 80px;
+    height: 80px;
+    border: 5px solid #214457;
+    border-radius: 50%;
+    transition: all 0.8s;
+}
+
+.Arrow-up:hover {
+    rotate: 360deg;
+}
+
+.Arrow-up-line {
+    margin-bottom: 8px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 40px solid #214457;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    min-height: 100px;
+}
+
+.Created-by {
+    margin-bottom: 10px;
+}
+
+.Logos {
+    display: flex;
+    gap: 10px;
+}
+
+.Logo {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.Logo:hover {
+    transform: scale(1.06);
+}
